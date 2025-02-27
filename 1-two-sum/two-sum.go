@@ -20,4 +20,24 @@ func twoSum(nums []int, target int) []int {
         indexMap[(nums[i])] = i;
    }
    return nil;
+
+    // greedy approach but not space efficienet just to tell if solution possible or not only 
+    // numsCopy := make([]int, len(nums))
+    // copy(nums, numsCopy)
+    // sort.Ints(numsCopy)
+    // l:=0
+    // r:=len(numsCopy) -1
+
+    // for l < r {
+    //     if(numsCopy[l] + numsCopy[r] ==target){
+    //         break
+    //     }else if (numsCopy[l]+numsCopy[r] <target){
+    //         l++
+    //     }else{
+    //         r--
+    //     }
+        
+    // }
+    // return nil
+
 }
